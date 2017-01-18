@@ -602,5 +602,9 @@ enum {
 #define AR_DISABLE_LABELING_DEBUG_MODE 1
 #endif
 
+#undef  AR_INPUT_QUICKTIME
+#define _TIMESPEC_DEFINED
+
+
 #endif // !AR_CONFIG0_H
 

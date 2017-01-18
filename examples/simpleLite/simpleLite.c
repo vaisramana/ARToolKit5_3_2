@@ -212,10 +212,10 @@ static int setupCamera(const char *cparam_name, char *vconf, ARParamLT **cparamL
         ARLOGw("*** Camera Parameter resized from %d, %d. ***\n", cparam.xsize, cparam.ysize);
         arParamChangeSize(&cparam, xsize, ysize, &cparam);
     }
-#ifdef DEBUG
+//#ifdef DEBUG
     ARLOG("*** Camera Parameter ***\n");
     arParamDisp(&cparam);
-#endif
+//#endif
     if ((*cparamLT_p = arParamLTCreate(&cparam, AR_PARAM_LT_DEFAULT_OFFSET)) == NULL) {
         ARLOGe("setupCamera(): Error: arParamLTCreate.\n");
         return (FALSE);
